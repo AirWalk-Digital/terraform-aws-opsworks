@@ -1,1 +1,1 @@
-# terraform-aws-opswroks
+# terraform-aws-opsworks
