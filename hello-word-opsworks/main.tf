@@ -2,8 +2,8 @@ module "opsworks_stack" {
   source = "../modules/opsworks_stack"
   name   = "hello-word-opsworks"
   region = "us-west-2"
-  service_role = "arn:aws:iam:::role/aws-opsworks-service-role"
-  instance_profile = "arn:aws:iam:::instance-profile/aws-opsworks-ec2-role"
+  service_role = ""
+  instance_profile = ""
   vpc = "vpc-"
   subnet = "subnet-"
   json = <<EOT
@@ -35,7 +35,7 @@ module "opsworks_application" {
   name = "hello-word-app"
   short_name = "hello-word-app"
   stack_id = "${module.opsworks_stack.id}"
-  type = "Node.js"
+  type = "nodejs"
   branch = "master"
   repo_url_app = "https://github.com/AirWalk-Digital/terraform-aws-opsworks.git//hello-word-opsworks"
 }

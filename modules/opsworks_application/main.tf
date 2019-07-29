@@ -15,5 +15,4 @@ resource "aws_opsworks_application" "application" {
     revision = "${var.branch}"
     url      = "${var.repo_url_app}"
   }
-  rails_env             = "staging"
 }
