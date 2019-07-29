@@ -1,14 +1,14 @@
 # terraform-aws-opsworks
 
-##Description
+## Description
 This AWS Terraform module setup a OpsWorks Stack with NodeJs layer and a sample application. You can manage the instance, layer and configuration according to the requirements by using this module. 
 
-##Modules Covered
+## Modules Covered
 - AWS OpsWorks Application
 - AWS OpsWorks Instance
 - AWS OpsWorks Stack
 
-##Usage
+## Usage
 Example of creating a stack
 ```bash
 module "opsworks_stack" {
@@ -41,7 +41,7 @@ module "opsworks_instance" {
 }
 ```
 
-##Attributes
+## Attributes
 | Name | Description | Type | Mandatory | 
 | :---: | ---------- | :---: | :------: |
 | name | Name of stack | string | yes |
